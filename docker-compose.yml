@@ -1,0 +1,10 @@
+services:
+  hashtek-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hashtek-solutions:latest
+    container_name: hashtek-website
+    restart: always
+    ports:
+      - "8081:80"
